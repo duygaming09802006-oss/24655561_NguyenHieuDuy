@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide 5</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #main-container {
+            width: 700px;
+        }
+        .banner {
+            display: block;
+            margin-bottom: 10px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
+        }
+        .controls {
+            margin-bottom: 10px;
+        }
+        .controls img {
+            height: 30px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        .thumbnails {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 15px;
+        }
+        .thumbnails a {
+            display: inline-block;
+        }
+        .thumbnails img {
+            width: 80px;
+            height: 50px;
+            object-fit: cover;
+            border: 1px solid #000;
+        }
+        .thumbnails img.active {
+            border: 2px solid red; 
+        }
+        .main-slide {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+        }
+
+        .caption {
+            font-style: italic;
+            margin-top: 8px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <img src="../image/fiddler.jpg" alt="Banner" class="banner"><hr>
+        <div class="controls">
+            <a href="home.html"><img src="../image/home.jpg" alt="Home"></a>
+            <a href="Slide4.html"><img src="../image/start.jpg" alt="Prev"></a>
+            <img src="../image/back.jpg" alt="Play">
+            <a href="Slide6.html"><img src="../image/forward.jpg" alt="Next"></a>
+            <a href="Slide6.html"><img src="../image/end.jpg" alt="End"></a>
+        </div>
+        <div class="thumbnails">
+            <a href="Slide1.html"><img src="../image/slide1.jpg"></a>
+            <a href="Slide2.html"><img src="../image/slide2.jpg"></a>
+            <a href="Slide3.html"><img src="../image/slide3.jpg"></a>
+            <a href="Slide4.html"><img src="../image/slide4.jpg"></a>
+            <a href="Slide5.html"><img src="../image/slide5.jpg" class="active"></a>
+            <a href="Slide6.html"><img src="../image/slide6.jpg"></a>
+        </div>
+        <img src="../image/slide5.jpg" class="main-slide">
+        <div class="caption">"Fiddler Cast #2" (Front Row): Olivia Young, Angela Unger <br> (Second Row): Terry Brown, Terry Stoller, Brett Anglewright, Diane Lee, Karen Tindale</div>
+    </div>
+</body>
+</html>
